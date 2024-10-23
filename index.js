@@ -54,3 +54,18 @@ console.log(propertyDescriptor);
   (function() {})()
  */
 
+/**
+ * The commented code below will throw the 'console.time is not a function' error.
+ * Use the logged error stack to place break points at appropriate locations and 
+ * start the Node.js debugger to debug the error.
+ */
+
+/*
+  try {
+    console.time = "foo";
+    console.time();
+  } catch (error) {
+    console.log(error.stack);
+  }
+*/
+
